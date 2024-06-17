@@ -13,6 +13,7 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.material3.ElevatedCard
@@ -49,6 +50,7 @@ fun QuoteCard(dailyQuote: DailyQuote, modifier: Modifier = Modifier) {
     }
 
     ElevatedCard(
+        elevation  = CardDefaults.elevatedCardElevation(defaultElevation = 8.dp),
         onClick = { hidden = !hidden },
         shape = MaterialTheme.shapes.medium,
         modifier = modifier
